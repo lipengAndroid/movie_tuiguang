@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="138dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_weight="1"
+                tools:ignore="RtlHardcoded">
+
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/share"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_weight="1"
+                android:background="@drawable/bg_click_withe_frame"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:src="@mipmap/share" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/fxyj"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.judian.watch.videos.DiyView.AutoHeightImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_fx_dialog" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@drawable/bg_ywell_fillet"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_8"
+            android:text="@string/zdl"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</layout>

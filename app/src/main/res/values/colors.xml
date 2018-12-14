@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_two">#EB5F62</color>
+    <color name="red_three">#EC9153</color>
+    <color name="black">#000000</color>
+    <color name="gray">#33000000</color>
+    <color name="white">#ffffff</color>
+    <color name="hui">#f5f5f5</color>
+    <color name="ahui">#55000000</color>
+
+    <color name="bt_bg_gray">#B5C4C7</color>
+
+
+    <color name="yellow">#D9D919</color>
+    <color name="divide_line">#f7f7f7</color>
+    <color name="style_color">#c40000</color>
+    <color name="app_blue">#0084f7</color>
+    <color name="ck_blue">#4AaaFF</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="ededed">#ededed</color>
+
+    <color name="txt_black">#818282</color>
+
+    <color name="chun_yellow">#00ff00</color>
+    <color name="chun_RED">#FF0000</color>
+    <color name="bt_RED_two">#d8b079</color>
+
+</resources>

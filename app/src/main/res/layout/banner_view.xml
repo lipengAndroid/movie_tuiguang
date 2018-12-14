@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.judian.watch.videos.DiyView.MyViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+
+    <com.judian.watch.videos.DiyView.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/main_view_pager"
+        android:layout_alignEnd="@id/main_view_pager"
+        android:layout_marginBottom="@dimen/dp_24"
+        android:layout_alignRight="@id/main_view_pager" />
+
+
+</RelativeLayout>

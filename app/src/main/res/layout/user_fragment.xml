@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:layout_width="match_parent"
+    android:id="@+id/smal"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@mipmap/user_fragment_bg">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/img_user_hoder"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/user_default"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/img_user_hoder"
+                    app:layout_constraintTop_toTopOf="@+id/img_user_hoder" />
+
+                <TextView
+                    android:id="@+id/vip_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hui"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/dp_8"
+                    app:layout_constraintStart_toStartOf="@+id/user_name"
+                    app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hui"
+                    android:visibility="gone"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/vip_end_time"
+                    app:layout_constraintTop_toBottomOf="@+id/vip_end_time" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/top_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="140dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_click_withe_frame"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_click_withe_frame"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_10"
+                        android:src="@mipmap/vip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/dp_16"
+                        android:text="兑换VIP"
+                        android:textColor="@color/black"
+                        tools:ignore="RtlSymmetry" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/vip"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bg_click_withe_frame"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_10"
+                        android:src="@mipmap/vip"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/lqvip"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_click_withe_frame"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_10"
+                        android:src="@mipmap/share" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/fxyj"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:overScrollMode="never">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <!--  <include
+                      android:id="@+id/lay_band_phone_num"
+                      layout="@layout/xia_chilun_layout" />-->
+
+                <include
+                    android:id="@+id/lay_one"
+                    layout="@layout/xia_chilun_layout" />
+
+                <include
+                    android:id="@+id/lay_two"
+                    layout="@layout/zhong_chilun_layout" />
+
+                <include
+                    android:id="@+id/lay_three"
+                    layout="@layout/zhong_chilun_layout" />
+
+
+                <include
+                    android:id="@+id/lay_four"
+                    layout="@layout/zhong_chilun_layout" />
+
+                <include
+                    android:id="@+id/lay_fiv"
+                    layout="@layout/shang_chilun_layout" />
+
+                <!--<include-->
+                <!--android:id="@+id/lay_six"-->
+                <!--layout="@layout/shang_chilun_layout" />-->
+
+                <TextView
+                    android:id="@+id/login_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/bg_click_withe_frame"
+                    android:gravity="center"
+                    android:text="@string/tcdl"
+                    android:textColor="@color/style_color" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</layout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+        <attr name="item_count" />
+    </declare-styleable>
+    <attr name="item_count" format="integer" />
+
+
+    <declare-styleable name="CirclePageIndicator">
+        <attr name="centered" format="boolean" />
+        <attr name="fillColor" format="color" />
+        <attr name="pageColor" format="color" />
+        <attr name="my_orientation" format="integer" />
+        <attr name="snap" format="boolean" />
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeWidth" format="integer" />
+        <attr name="my_background" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="LineEditeText">
+        <attr name="lineColorEt" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="waveSideBar">
+        <attr name="textColor" format="color|reference" />
+        <attr name="backgroundColor" format="color|reference" />
+        <attr name="chooseTextColor" format="color|reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="hintTextSize" format="dimension" />
+        <attr name="radius" format="dimension" />
+        <attr name="circleRadius" format="dimension" />
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+
+    <attr name="myFirstCircleColor" format="color" />
+    <attr name="mySecondCircleColor" format="color" />
+    <attr name="myCircleWidth" format="dimension" />
+    <attr name="myCircleSpeed" format="integer" />
+    <attr name="myCircleText" format="string" />
+    <attr name="myCircleTextSize" format="dimension" />
+    <attr name="myCircleTextWidth" format="dimension" />
+    <attr name="myCircleCount" format="integer" />
+    <attr name="myCircleTextColor" format="color" />
+
+    <declare-styleable name="ZqhCircle">
+        <attr name="myFirstCircleColor" />
+        <attr name="mySecondCircleColor" />
+        <attr name="myCircleWidth" />
+        <attr name="myCircleSpeed" />
+        <attr name="myCircleText" />
+        <attr name="myCircleTextSize" />
+        <attr name="myCircleTextWidth" />
+        <attr name="myCircleTextColor" />
+        <attr name="myCircleCount" />
+    </declare-styleable>
+</resources>

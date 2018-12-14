@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:background="@color/transparent"
+    android:layout_height="268dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:src="@drawable/vipdialogbg" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/gb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/guanbi"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/share_qun"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="分享即送7天VIP"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/share_qun"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/bg_bule_fillet"
+        android:gravity="center"
+        android:text="@string/fxzwxq"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/share_pyq"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/share_qun"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_green_fillet"
+        android:gravity="center"
+        android:text="@string/fxzpyq"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

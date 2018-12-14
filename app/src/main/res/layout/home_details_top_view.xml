@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_deft" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/dy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_ywell_two_fillet"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:text="@string/dy"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/kg"
+                android:textColor="@color/txt_black" />
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_details1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/kg"
+            android:textColor="@color/txt_black" />
+
+        <TextView
+            android:id="@+id/tv_details2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/kg"
+            android:textColor="@color/txt_black" />
+
+        <TextView
+            android:id="@+id/tv_details3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/kg"
+            android:textColor="@color/txt_black" />
+
+        <TextView
+            android:id="@+id/ztxq"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_16"
+            android:textColor="@color/black"
+            tools:ignore="RtlSymmetry"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16" />
+
+        <LinearLayout
+            android:id="@+id/ss_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/one"
+                layout="@layout/video_list_item"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_4"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/two"
+                layout="@layout/video_list_item"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_4"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/three"
+                layout="@layout/video_list_item"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_4"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

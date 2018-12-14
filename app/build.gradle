@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+//    lintOptions {
+//        checkReleaseBuilds true
+//        abortOnError true
+//    }
+    dataBinding {
+        enabled = true
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 3
+        versionName '3.0.0'
+//        multiDexEnabled true
+//        signingConfig signingConfigs.debug
+        flavorDimensions "versionCode"//studio3.0 需要
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v8a', 'armeabi-v7a', 'x86', 'x86_64', 'mips', 'mips64'
+//, 'x86_64', 'x86', 'x86_64', 'mips', 'mips64''armeabi',
+        }
+    }
+    productFlavors {
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+//            proguardFile 'C:/Users/Administrator/Desktop/watchVideos/app/proguard-rules.pro'
+            zipAlignEnabled false
+            minifyEnabled false
+            shrinkResources false
+        }
+        release {
+//            signingConfig signingConfigs.formal
+//            proguardFile 'C:/Users/Administrator/Desktop/watchVideos/app/proguard-rules.pro'
+            zipAlignEnabled false
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    implementation 'com.squareup.okio:okio:1.13.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.github.icuihai:gm-statusbar:1.0'
+    //刷新layout
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    //    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'  //没有使用特殊Header，可以不加这行
+    /*微信登录*/
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.4.0'
+    /*友盟统计*/
+    implementation 'com.umeng.analytics:analytics:6.1.4'
+    /*阿里推送*/
+//    implementation files('libs/alicloud-android-push-sdk-3.0.12.jar')
+//    implementation files('libs/utdid4all-1.1.5.3_proguard.jar')
+    //预加载界面框架
+    implementation 'com.github.florent37:fiftyshadesof:1.0.0'
+    /*阿里百川*/
+//    implementation files('libs/alibabauth_core-1.4.3.jar')
+//    implementation files('libs/alibabauth_ext-1.4.3.jar')
+//    implementation files('libs/alibabauth_ui-1.4.3.aar')
+//    implementation files('libs/alibc_link_partner-1.1.0.0.aar')
+//    implementation files('libs/alibc_trade_biz-3.1.1.206.aar')
+//    implementation files('libs/alibc_trade_common-3.1.1.206.aar')
+//    implementation files('libs/alibc_trade_sdk-3.1.1.206.aar')
+//    implementation files('libs/securitybodyaar3-5.1.25.aar')
+//    implementation files('libs/securityguardaar3-5.1.81.aar')
+//    implementation files('libs/tuniontradesdk-0.3.2.aar')
+//    implementation files('libs/alipaySingle-20160825.jar')
+//    implementation files('libs/app-monitor-sdk-2.5.1.3_for_bc_proguard.jar')
+//    implementation files('libs/fastjson-1.2.9.jar')
+//    implementation files('libs/mtopsdk_allinone_open-1.2.2.4.jar')
+    implementation 'com.android.support:multidex:1.0.3'
+}

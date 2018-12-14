@@ -1,0 +1,38 @@
+<resources>
+
+    <dimen name="butt">44dp</dimen>
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_44">44dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+
+
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+
+
+    <!--   <dimen name="button_text_size">14sp</dimen>
+       <dimen name="expand_tab_item_height">45dp</dimen>
+       <dimen name="expand_tab_eara_height">380dp</dimen>
+       <dimen name="head_bar_height">45dp</dimen>
+
+       <dimen name="textSize">10sp</dimen>
+       <dimen name="hintTextSize">32sp</dimen>
+       <dimen name="chooseTextSize">12sp</dimen>
+       <dimen name="padding">20dp</dimen>
+       <dimen name="radius">25dp</dimen>
+       <dimen name="circleRadius">28dp</dimen>-->
+</resources>
